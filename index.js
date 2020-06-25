@@ -1,9 +1,16 @@
 import DATA from './data.js';
 
+const body = document.querySelector('body');
+
+body.addEventListener('transitionend', e=>{
+    body.classList.remove('active')
+})
+
 const playAudio = (audio,key) =>{
     audio.currentTime = 0;
     audio.play();
     key.classList.add('active');
+    body.classList.add('active');
 }
 
 const keyMaker = props =>{
@@ -35,9 +42,6 @@ const keyMaker = props =>{
 
     return key;
 }
-
-
-const body = document.querySelector('body');
 
 const container = document.createElement('div');
 
