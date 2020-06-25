@@ -9,7 +9,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #27aa80;
+    background:linear-gradient(45deg,#27aa80, #a8ff3e);
 }
 .key{
     user-select: none; /* supported by Chrome and Opera */
@@ -45,7 +45,7 @@ body{
 }
 body.active{
     transition: all 0.02s;
-    background: #63dcaf;
+    background:linear-gradient(45deg,#a8ff3e,#27aa80 );
 }
 .container{
     width: 100%;
